@@ -314,19 +314,6 @@
       "collection-list": {
         "type": "collection-list",
         "blocks": {
-          "collection-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "clothes-and-style",
-              "image": "shopify:\/\/shop_images\/sitting-dog-portrait.jpg",
-              "image_alignment": "center center",
-              "content_position": "bottomCenter",
-              "subheading": "Highly selected collection to style your pet",
-              "title": "Clothes and style",
-              "button_text": "View products",
-              "apply_overlay": true
-            }
-          },
           "collection-1": {
             "type": "collection",
             "settings": {
@@ -352,12 +339,25 @@
               "button_text": "View products",
               "apply_overlay": true
             }
+          },
+          "collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "clothes-and-style",
+              "image": "shopify:\/\/shop_images\/sitting-dog-portrait.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomCenter",
+              "subheading": "Highly selected collection to style your pet",
+              "title": "Clothes and style",
+              "button_text": "View products",
+              "apply_overlay": true
+            }
           }
         },
         "block_order": [
-          "collection-0",
           "collection-1",
-          "collection-2"
+          "collection-2",
+          "collection-0"
         ],
         "settings": {
           "image_size": "small",
