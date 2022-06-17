@@ -317,7 +317,7 @@
           "collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "doggos-collection",
+              "collection": "clothes-and-style",
               "image": "shopify:\/\/shop_images\/sitting-dog-portrait.jpg",
               "image_alignment": "center center",
               "content_position": "bottomCenter",
@@ -330,7 +330,7 @@
           "collection-1": {
             "type": "collection",
             "settings": {
-              "collection": "kitties-collection",
+              "collection": "pets-essentials",
               "image": "shopify:\/\/shop_images\/2021_0524-dogPuzzleToys-AdobeStock_240163596.jpg",
               "image_alignment": "center center",
               "content_position": "bottomCenter",
@@ -343,7 +343,7 @@
           "collection-2": {
             "type": "collection",
             "settings": {
-              "collection": "for-both-collection-1",
+              "collection": "toys-and-gadgets",
               "image": "shopify:\/\/shop_images\/Cute_Kitten_Playing_with_Toy_HD_Wallpaper_HD_Nature_Wallpapers.jpg",
               "image_alignment": "center center",
               "content_position": "bottomCenter",
