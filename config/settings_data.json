@@ -331,7 +331,7 @@
             "type": "collection",
             "settings": {
               "collection": "kitties-collection",
-              "image": "shopify:\/\/shop_images\/Flickr.jpg",
+              "image": "shopify:\/\/shop_images\/2021_0524-dogPuzzleToys-AdobeStock_240163596.jpg",
               "image_alignment": "center center",
               "content_position": "bottomCenter",
               "subheading": "useful handy gadgets covering your pet's essential needs",
@@ -347,7 +347,7 @@
               "image": "shopify:\/\/shop_images\/Life_s_little_treasures.png",
               "image_alignment": "center center",
               "content_position": "bottomCenter",
-              "subheading": "Gadgets both you both and you pet can enjoy.",
+              "subheading": "Gadgets both you both and your pet can enjoy.",
               "title": "Toys and gadgets",
               "button_text": "View products",
               "apply_overlay": true
