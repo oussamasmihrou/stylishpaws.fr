@@ -209,21 +209,23 @@ f{%- capture section_settings -%}
         {%- endif -%}
       {%- endfor -%}
     {%- endcapture -%}
-
+    
+{%comment%} where to change reviews part{%endcomment%}
     <div class="Product__InfoWrapper">
       <div class="Product__Info {% if image_count == 0 %}Product__Info--noGallery{% endif %}">
         <div class="Container">
           {%- include 'product-meta', show_description: true -%}
           {%- include 'product-form' -%}
 
-            <div class="ProductMeta__Description Rte"> {% render 'a2reviews-widget' product:product %}
+            <div class="ProductMeta__Description Rte"> 
+              
             </div>
-        
+            
           
           
           {% comment %}<div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div> {% endcomment %}
 	
-
+          {% comment %}
           {%- if product_aside != blank and image_count > 0 -%}
             <div class="Product__QuickNav hidden-pocket">
               <div class="Product__QuickNavWrapper">
@@ -232,7 +234,9 @@ f{%- capture section_settings -%}
               </div>
             </div>
           {%- endif -%}
+          {% endcomment %}
         </div>
+        
       </div>
 
       {%- if action_list_items != blank -%}

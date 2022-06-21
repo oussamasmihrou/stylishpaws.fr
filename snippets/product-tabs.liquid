@@ -121,13 +121,13 @@
         {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
         <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-          <span>{{ 'product.tabs.reviews' | t }} <span class="text--light">({{ reviews_count | default: 0 }})</span></span>
+          <span>{{ 'product.tabs.reviews' | t }} </span></span>
           <span class="Collapsible__Plus"></span>
         </button>
 
         <div class="Collapsible__Inner">
-          <div class="Collapsible__Content">
-            <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+          <div style = "max-height: 900px;" class="Collapsible__Content">
+            <div>{% render 'a2reviews-widget' product:product %}</div>
           </div>
         </div>
       </div>
