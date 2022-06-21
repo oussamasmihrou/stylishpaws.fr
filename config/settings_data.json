@@ -320,7 +320,7 @@
               "collection": "pets-essentials",
               "image": "shopify:\/\/shop_images\/2021_0524-dogPuzzleToys-AdobeStock_240163596.jpg",
               "image_alignment": "center center",
-              "content_position": "bottomLeft",
+              "content_position": "bottomCenter",
               "subheading": "",
               "title": "Pets' Essentials",
               "button_text": "View products",
@@ -333,8 +333,8 @@
               "collection": "toys-and-gadgets",
               "image": "shopify:\/\/shop_images\/Cute_Kitten_Playing_with_Toy_HD_Wallpaper_HD_Nature_Wallpapers.jpg",
               "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "Gadgets both you both and your pet can enjoy.",
+              "content_position": "bottomCenter",
+              "subheading": "",
               "title": "Toys and gadgets",
               "button_text": "View products",
               "apply_overlay": true
@@ -347,7 +347,7 @@
               "image": "shopify:\/\/shop_images\/sitting-dog-portrait.jpg",
               "image_alignment": "bottom left",
               "content_position": "bottomCenter",
-              "subheading": "Highly selected collection to style your pet",
+              "subheading": "",
               "title": "Clothes and style",
               "button_text": "View products",
               "apply_overlay": true
