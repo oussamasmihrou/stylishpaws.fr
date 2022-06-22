@@ -81,6 +81,7 @@
           <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
 {% render 'a2reviews-total' type:'collection', product:product %}
         </h2>
+<div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}" style="text-align:center"></div>
 
         {%- if show_color_swatch -%}
           {%- assign color_swatch_list = '' -%}

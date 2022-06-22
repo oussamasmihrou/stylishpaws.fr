@@ -103,6 +103,8 @@
 {{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
 
 {% include 'a2reviews-head-var' %}
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
   <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
@@ -159,5 +161,7 @@
 {% include 'adolab-get-clicked-seo' %}
 
 {% render 'spurit_sct_theme_snippet' %}
+
+	{{ shop.metafields.loox["global_html_body"] }}
 </body>
 </html>
