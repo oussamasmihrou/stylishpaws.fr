@@ -774,6 +774,17 @@
         "type": "alireviews-widget-188161",
         "settings": {
         }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "image_size": "small",
+          "add_spacing": true,
+          "expand_collection": true,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
