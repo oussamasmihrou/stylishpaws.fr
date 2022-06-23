@@ -442,9 +442,9 @@
           "toolbar_position": "top",
           "filter_position": "drawer",
           "filter_mode": "tag",
-          "show_filter_color_swatch": true,
+          "show_filter_color_swatch": false,
           "filter_menu": "",
-          "grid_items_per_page": 40,
+          "grid_items_per_page": 44,
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
