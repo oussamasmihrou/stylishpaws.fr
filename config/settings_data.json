@@ -352,12 +352,26 @@
               "button_text": "View products",
               "apply_overlay": true
             }
+          },
+          "33441637-4bb7-46ea-b828-19cf692fa6f4": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "",
+              "button_text": "View products",
+              "apply_overlay": true
+            }
           }
         },
         "block_order": [
           "collection-1",
           "collection-2",
-          "collection-0"
+          "collection-0",
+          "33441637-4bb7-46ea-b828-19cf692fa6f4"
         ],
         "settings": {
           "image_size": "small",
@@ -420,17 +434,18 @@
           },
           "2fb56391-0a16-4107-a0dd-5a86f5fdf1a8": {
             "type": "look",
+            "disabled": true,
             "settings": {
               "dot_style": "light",
-              "product_1": "",
+              "product_1": "170-170cm-pet-sprinkler-pad-play-cooling-mat-swimming-pool-inflatable-water-spray-pad-mat-tub-summer-cool-dog-bathtub-for-dogs",
               "product_1_horizontal_position": 15,
               "product_1_vertical_position": 15,
               "product_2": "",
               "product_2_horizontal_position": 50,
               "product_2_vertical_position": 50,
               "product_3": "",
-              "product_3_horizontal_position": 85,
-              "product_3_vertical_position": 85
+              "product_3_horizontal_position": 18,
+              "product_3_vertical_position": 21
             }
           }
         },
