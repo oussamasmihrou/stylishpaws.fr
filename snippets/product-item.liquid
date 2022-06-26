@@ -54,16 +54,19 @@
       {%- capture product_labels -%}
         {%- for tag in product.tags -%}
           {%- if tag contains '__label' -%}
-            <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
+           {%comment%} editing the tags  {%endcomment%}
+           <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
-
+        {%comment%} on Sale section  {%endcomment%}
         {%- if product.available -%}
           {%- if product.compare_at_price > product.price -%}
-            <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span>
+            <span style ="color:red" class="ProductItem__Label Heading Text--subdued">Save {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price }}%</span>
           {%- endif -%}
-        {%- else -%}
+        
+        {%comment%} Solde out section  {%endcomment%}
+          {%- else -%}
           <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.sold_out' | t }}</span>
         {%- endif -%}
       {%- endcapture -%}
