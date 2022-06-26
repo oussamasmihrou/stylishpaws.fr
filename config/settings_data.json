@@ -355,12 +355,11 @@
           },
           "33441637-4bb7-46ea-b828-19cf692fa6f4": {
             "type": "collection",
-            "disabled": true,
             "settings": {
               "collection": "top-selling-1",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
+              "subheading": "",
               "title": "",
               "button_text": "View products",
               "apply_overlay": true
