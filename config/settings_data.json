@@ -357,7 +357,7 @@
             "type": "collection",
             "disabled": true,
             "settings": {
-              "collection": "",
+              "collection": "top-selling-1",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
