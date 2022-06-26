@@ -62,7 +62,7 @@
         {%comment%} on Sale section  {%endcomment%}
         {%- if product.available -%}
           {%- if product.compare_at_price > product.price -%}
-            <span style ="color:red" class="ProductItem__Label Heading Text--subdued">Save {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price }}%</span>
+            <span style ="color:red" class="ProductItem__Label Heading Text--subdued">Save {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price || round }}%</span>
           {%- endif -%}
         
         {%comment%} Solde out section  {%endcomment%}
