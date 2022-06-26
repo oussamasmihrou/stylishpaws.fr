@@ -132,7 +132,7 @@
           "logo_max_width": 100,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
-          "enable_transparent_header": true,
+          "enable_transparent_header": false,
           "enable_transparent_header_collection": true,
           "transparent_text_color": "#c15262",
           "transparent_logo": "shopify:\/\/shop_images\/STYL__3_-removebg-preview_1d0074e6-30b7-41a6-8a03-d23a6577f035.png"
