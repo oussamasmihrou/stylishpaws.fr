@@ -92,7 +92,7 @@
 {%- endif -%}
 
 
-<div style="margin-top:20px ;" class="Collapsible Collapsible--large">
+<div  class="Collapsible Collapsible--large">
     {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
     {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
