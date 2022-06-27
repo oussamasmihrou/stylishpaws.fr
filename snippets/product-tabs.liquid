@@ -1,3 +1,4 @@
+<script> var collapsed = 0;</script> 
 {%- assign first_page = pages[section.settings.tab_page_1_handle] -%}
 {%- assign second_page = pages[section.settings.tab_page_2_handle] -%}
 {%- assign first_custom_page = '' -%}
@@ -53,7 +54,7 @@
   <div class="Product__Tabs">
     {%- if has_unique_tab_1 -%}
       <div class="Collapsible Collapsible--large">
-        <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+        <button  class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
           {{- unique_tab_1_title -}} <span class="Collapsible__Plus"></span>
         </button>
 
@@ -114,23 +115,40 @@
         </div>
       </div>
     {% endif %}
-
+   
     {%- if section.settings.reviews_enabled -%}
       <div class="Collapsible Collapsible--large">
         {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
         {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
-        <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+        <button id = "review-btn" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false" onclick="">
           <span>{{ 'product.tabs.reviews' | t }} </span></span>
           <span class="Collapsible__Plus"></span>
         </button>
 
         <div class="Collapsible__Inner">
-          <div style = "max-height: 900px;" class="Collapsible__Content">
+          <div style = "height: 500px;display:none;" id="Collapsible-reviews" class="Collapsible__Content">
             <div>{% render 'a2reviews-widget' product:product %}</div>
           </div>
         </div>
       </div>
+      <script>
+        document.getElementById("review-btn").addEventListener("click", collapse);
+        
+        function collapse() {
+          if (collapsed){
+          
+            document.getElementById("Collapsible-reviews").style.display = "none";
+            console.log("decollapsed")
+            collapsed = false;
+          }
+        
+          else {
+          document.getElementById("Collapsible-reviews").style.display = "inline";
+          console.log("collapsed")
+          collapsed = true;
+        }};
+        </script>
     {%- endif -%}
   </div>
 {%- endif -%}
