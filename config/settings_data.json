@@ -579,18 +579,18 @@
               "quote": "<p>Excellent services, is my first time buying from this store, l got my product in good shape with very convenient process 😍<\/p>"
             }
           },
-          "1536065842202-2": {
-            "type": "testimonial",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/Capture-removebg-preview.png",
-              "quote": "<p>I love everything in here 🤩, l took my time and searched through this shop and l really love their quality products 🐶<\/p>"
-            }
-          },
           "1536065842202-1": {
             "type": "testimonial",
             "settings": {
               "logo": "shopify:\/\/shop_images\/Capture-removebg-preview.png",
               "quote": "<p>I always loved to take my doggo for long periods picnics, Stylish Paws helped me easily ensure his vitale needs with a handy multifunctional bottle 👌<\/p>"
+            }
+          },
+          "1536065842202-2": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Capture-removebg-preview.png",
+              "quote": "<p>I love everything in here 🤩, l took my time and searched through this shop and l really love their quality products 🐶<\/p>"
             }
           },
           "1536065842202-0": {
@@ -603,8 +603,8 @@
         },
         "block_order": [
           "1536067220146",
-          "1536065842202-2",
           "1536065842202-1",
+          "1536065842202-2",
           "1536065842202-0"
         ],
         "settings": {
