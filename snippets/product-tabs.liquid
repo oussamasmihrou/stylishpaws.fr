@@ -96,9 +96,9 @@
     {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
     {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
-    <button id = "review-btn1" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false" onclick="">
-      <span>Product specifications </span></span>
-      <span class="Collapsible__Plus"></span>
+    <button id = "review-btn1" class="Collapsible__Button Heading u-h6 shopify-payment-button__button shopify-payment-button__button--unbranded _2ogcW-Q9I-rgsSkNbRiJzA _2EiMjnumZ6FVtlC7RViKtj _2-dUletcCZ2ZL1aaH0GXxT" data-action="toggle-collapsible" aria-expanded="false" onclick="">
+      <span style="margin-left: 10px ;margin-right:auto">Product specifications </span>
+      <span style = "margin-right:10px; "class="Collapsible__Plus"></span>
     </button>
     
     <div id= "Collapsible__Inner-reviews" class="Collapsible__Inner">
@@ -110,14 +110,25 @@
 
   <style>
     @media only screen and (min-width: 600px) {
+      .Collapsible{
+        transition:all .3s .1s;
+        
+      }
+      .Collapsible:hover{
+      
+        
+      }
       #Collapsible-reviews1{
         overflow-y : auto;
+       
         max-height: 1000px;
     
       }
       #Collapsible__Inner-reviews{
         overflow-y : auto;
         width: 120%;
+
+        justify-content: center;
       }
     }
     #CCollapsible-reviews1{
@@ -171,7 +182,7 @@
 
     {%- if second_page != empty -%}
       <div class="Collapsible Collapsible--large">
-        <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+        <button class="Collapsible__Button Heading u-h6 " data-action="toggle-collapsible" aria-expanded="false">
           {{- second_page.title -}} <span class="Collapsible__Plus"></span>
         </button>
 
@@ -190,9 +201,9 @@
         {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
         {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
-        <button id = "review-btn" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false" onclick="">
-          <span>{{ 'product.tabs.reviews' | t }} </span></span>
-          <span class="Collapsible__Plus"></span>
+        <button id = "review-btn" class="Collapsible__Button Heading u-h6 Collapsible__Button Heading u-h6 shopify-payment-button__button shopify-payment-button__button--unbranded _2ogcW-Q9I-rgsSkNbRiJzA _2EiMjnumZ6FVtlC7RViKtj _2-dUletcCZ2ZL1aaH0GXxT" data-action="toggle-collapsible" aria-expanded="false" onclick="">
+          <span  style="margin-left: 10px ;margin-right:auto">{{ 'product.tabs.reviews' | t }} </span></span>
+          <span  style = "margin-right:10px;" class="Collapsible__Plus "></span>
         </button>
         
         <div id= "Collapsible__Inner-reviews" class="Collapsible__Inner">
