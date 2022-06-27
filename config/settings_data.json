@@ -789,8 +789,8 @@
         "type": "custom-html",
         "settings": {
           "subheading": "",
-          "title": "",
-          "html": "Our collections"
+          "title": "Our collections",
+          "html": ""
         }
       }
     },
