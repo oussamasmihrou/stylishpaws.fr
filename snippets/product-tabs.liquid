@@ -125,13 +125,34 @@
           <span>{{ 'product.tabs.reviews' | t }} </span></span>
           <span class="Collapsible__Plus"></span>
         </button>
-
-        <div class="Collapsible__Inner">
-          <div style = "height: 500px;display:none;" id="Collapsible-reviews" class="Collapsible__Content">
+        
+        <div id= "Collapsible__Inner-reviews" class="Collapsible__Inner">
+          <div id="Collapsible-reviews" class="Collapsible__Content">
             <div>{% render 'a2reviews-widget' product:product %}</div>
           </div>
         </div>
       </div>
+
+      <style>
+        @media only screen and (min-width: 600px) {
+          #Collapsible-reviews{
+            overflow-y : auto;
+            height: 700px;
+          }
+          #Collapsible__Inner-reviews{
+            overflow-y : auto;
+            height: 700px;
+            width: 120%;
+          }
+        }
+        #Collapsible-reviews{
+          
+          display:none;
+          
+        }
+
+
+      </style>
       <script>
         document.getElementById("review-btn").addEventListener("click", collapse);
         
@@ -144,7 +165,8 @@
           }
         
           else {
-          document.getElementById("Collapsible-reviews").style.display = "inline";
+            
+          document.getElementById("Collapsible-reviews").style.display = "block";
           console.log("collapsed")
           collapsed = true;
         }};
