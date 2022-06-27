@@ -26,6 +26,8 @@
     {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
       <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
       <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+      <span style= "padding:10px ;margin-left: 15px; border: Black 1px solid;" class="ProductMeta__Price Price Price--highlight Text--subdued u-h4" data-money-convertible>Save {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%</span>
+
     {%- else -%}
       <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
     {%- endif -%}
