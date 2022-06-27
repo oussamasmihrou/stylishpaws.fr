@@ -129,7 +129,7 @@
         "settings": {
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/STYL__3_-removebg-preview_1d0074e6-30b7-41a6-8a03-d23a6577f035.png",
-          "logo_max_width": 100,
+          "logo_max_width": 95,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "enable_transparent_header": false,
