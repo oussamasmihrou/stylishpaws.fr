@@ -83,6 +83,75 @@
         </div>
       </div>
     {%- endif -%}
+    {%- if section.settings.show_payment_button and selected_variant.available == false -%}
+  <style>
+    #shopify-section-{{ section.id }} .shopify-payment-button {
+      display: none;
+    }
+  </style>
+{%- endif -%}
+
+
+<div style="margin-top:20px ;" class="Collapsible Collapsible--large">
+    {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
+    {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
+
+    <button id = "review-btn1" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false" onclick="">
+      <span>Product specifications </span></span>
+      <span class="Collapsible__Plus"></span>
+    </button>
+    
+    <div id= "Collapsible__Inner-reviews" class="Collapsible__Inner">
+      <div id="Collapsible-reviews1" class="Collapsible__Content">
+        <div>{{ product.description }}</div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media only screen and (min-width: 600px) {
+      #Collapsible-reviews1{
+        overflow-y : auto;
+        max-height: 1000px;
+    
+      }
+      #Collapsible__Inner-reviews{
+        overflow-y : auto;
+        width: 120%;
+      }
+    }
+    #CCollapsible-reviews1{
+      
+      display:none;
+      
+    }
+
+
+  </style>
+  <script>
+    document.getElementById("review-btn").addEventListener("click", collapse1);
+    
+    function collapse1() {
+      if (collapsed){
+      
+        document.getElementById("Collapsible-reviews1").style.display = "none";
+        console.log("decollapsed")
+        collapsed = false;
+      }
+    
+      else {
+        
+      document.getElementById("Collapsible-reviews1").style.display = "block";
+      console.log("collapsed")
+      collapsed = true;
+    }};
+    </script>
+  
+    
+
+  
+
+
 
     {%- if first_page != empty -%}
       <div class="Collapsible Collapsible--large">
