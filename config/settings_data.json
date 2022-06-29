@@ -352,6 +352,18 @@
               "apply_overlay": true
             }
           },
+          "547ae5ff-36cb-462f-b9e4-489607eb3a50": {
+            "type": "collection",
+            "settings": {
+              "collection": "collars",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_text": "View products",
+              "apply_overlay": true
+            }
+          },
           "collection-0": {
             "type": "collection",
             "settings": {
@@ -377,27 +389,15 @@
               "button_text": "View products",
               "apply_overlay": true
             }
-          },
-          "547ae5ff-36cb-462f-b9e4-489607eb3a50": {
-            "type": "collection",
-            "settings": {
-              "collection": "collars",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "",
-              "title": "",
-              "button_text": "View products",
-              "apply_overlay": true
-            }
           }
         },
         "block_order": [
           "33441637-4bb7-46ea-b828-19cf692fa6f4",
           "collection-1",
           "collection-2",
+          "547ae5ff-36cb-462f-b9e4-489607eb3a50",
           "collection-0",
-          "b4baed2e-717e-42c2-945b-6bc16eb67253",
-          "547ae5ff-36cb-462f-b9e4-489607eb3a50"
+          "b4baed2e-717e-42c2-945b-6bc16eb67253"
         ],
         "settings": {
           "image_size": "small",
