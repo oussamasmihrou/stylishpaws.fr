@@ -561,7 +561,7 @@
           "show_popup": true,
           "show_only_on_index": false,
           "show_only_for_visitors": true,
-          "show_only_once": true,
+          "show_only_once": false,
           "title": "Summer specials",
           "content": "<p>Summer specials at stylishpaws | up to <strong>-50 <\/strong>% off  <strong>FREE SHIPPING<\/strong>🥰 ( until 10\/07 )<\/p>",
           "show_newsletter": false,
