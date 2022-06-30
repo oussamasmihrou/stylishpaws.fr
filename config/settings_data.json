@@ -558,14 +558,14 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": false,
+          "show_popup": true,
           "show_only_on_index": false,
           "show_only_for_visitors": true,
           "show_only_once": true,
-          "title": "Popup",
-          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
-          "show_newsletter": true,
-          "apparition_delay": 4
+          "title": "Summer specials",
+          "content": "<p>Summer specials at stylishpaws | up to <strong>-50 <\/strong>% off  <strong>FREE SHIPPING<\/strong>🥰 ( until 10\/07 )<\/p>",
+          "show_newsletter": false,
+          "apparition_delay": 3
         }
       },
       "1536065219503": {
