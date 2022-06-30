@@ -834,7 +834,15 @@
       "1536067011368",
       "165420891911924d37",
       "165420982007ab07ed"
-    ]
+    ],
+    "blocks": {
+      "1347510106265755124": {
+        "type": "shopify:\/\/apps\/essential-countdown-timer\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Allure": {
