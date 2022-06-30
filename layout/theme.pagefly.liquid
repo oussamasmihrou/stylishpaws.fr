@@ -107,6 +107,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 {{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
 
 {% include 'a2reviews-head-var' %}
+	{% render 'vitals-loader' %}
+
 </head>
 
   <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}"><div class="pagefly-container">{{ content_for_layout }}</div></body>

@@ -105,6 +105,8 @@
 {% include 'a2reviews-head-var' %}
 
 	{{ shop.metafields.loox["global_html_head"] }}
+	{% render 'vitals-loader' %}
+
 </head>
 
   <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
