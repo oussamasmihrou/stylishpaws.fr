@@ -563,9 +563,9 @@
           "show_only_for_visitors": true,
           "show_only_once": false,
           "title": "Summer specials",
-          "content": "<p><a href=\"\/collections\/all\" title=\"Tous les produits\">Summer specials<\/a> at stylishpaws | up to <strong>-50%<\/strong> <strong>off +<\/strong>  <strong>FREE SHIPPING<\/strong>🥰 (until 10\/07)<\/p><p>Subscribe to our newsletter for upcoming offers <\/p>",
-          "show_newsletter": true,
-          "apparition_delay": 2
+          "content": "<p><a href=\"\/collections\/all\" title=\"Tous les produits\">Summer specials<\/a> at stylishpaws | up to <strong>-50%<\/strong> <strong>off +<\/strong>  <strong>FREE SHIPPING<\/strong>🥰 (until 10\/07)<\/p>",
+          "show_newsletter": false,
+          "apparition_delay": 3
         }
       },
       "1536065219503": {
