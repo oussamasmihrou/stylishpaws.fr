@@ -91,18 +91,18 @@
   </style>
 {%- endif -%}
 
-
-<div  class="Collapsible Collapsible--large">
-    {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
+  {%- comment -%} Description part {%- endcomment -%}
+<div style = "padding: 0px;" class="Collapsible Collapsible--large">
+  
     {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
-    <button id = "review-btn1" class="Collapsible__Button Heading u-h6 shopify-payment-button__button shopify-payment-button__button--unbranded _2ogcW-Q9I-rgsSkNbRiJzA _2EiMjnumZ6FVtlC7RViKtj _2-dUletcCZ2ZL1aaH0GXxT" data-action="toggle-collapsible" aria-expanded="false" onclick="">
+    <button id = "specificationbtn" class="Collapsible__Button Heading u-h6 shopify-payment-button__button shopify-payment-button__button--unbranded _2ogcW-Q9I-rgsSkNbRiJzA _2EiMjnumZ6FVtlC7RViKtj _2-dUletcCZ2ZL1aaH0GXxT" data-action="toggle-collapsible" aria-expanded="false" onclick="">
       <span style="margin-left: 10px ;margin-right:auto">Product specifications </span>
       <span style = "margin-right:10px; "class="Collapsible__Plus"></span>
     </button>
     
     <div id= "Collapsible__Inner-reviews" class="Collapsible__Inner">
-      <div id="Collapsible-reviews1" class="Collapsible__Content">
+      <div id="specificationCollapsible" class="Collapsible__Content">
         <div>{{ product.description }}</div>
       </div>
     </div>
@@ -112,17 +112,14 @@
     @media only screen and (min-width: 600px) {
       .Collapsible{
         transition:all .3s .1s;
-        
+
       }
-      .Collapsible:hover{
-      
-        
+      #specificationbtn{
+      padding: 0px;
       }
-      #Collapsible-reviews1{
+      #specificationCollapsible{
         overflow-y : auto;
-       
         max-height: 1000px;
-    
       }
       #Collapsible__Inner-reviews{
         overflow-y : auto;
@@ -131,13 +128,21 @@
         justify-content: center;
       }
     }
-    #CCollapsible-reviews1{
-      
-      display:none;
-      
-    }
-
-
+    .Collapsible{
+        transition:all .3s .1s;
+        padding: 0px; 
+      }
+    #specificationbtn{
+      padding: 13px 10px;
+      font-size: 0.65rem;padding: 13px 10px;
+      font-size: 0.65rem;
+      margin: 0px;
+      background-color: #d6b849;
+      }
+      #specificationbtn:hover{
+        border-color: #d6b849;
+        color: white;
+      }
   </style>
   <script>
     document.getElementById("review-btn").addEventListener("click", collapse1);
@@ -145,14 +150,14 @@
     function collapse1() {
       if (collapsed){
       
-        document.getElementById("Collapsible-reviews1").style.display = "none";
+        document.getElementById("specificationCollapsible").style.display = "none";
         console.log("decollapsed")
         collapsed = false;
       }
     
       else {
         
-      document.getElementById("Collapsible-reviews1").style.display = "block";
+      document.getElementById("specificationCollapsible").style.display = "block";
       console.log("collapsed")
       collapsed = true;
     }};
@@ -160,12 +165,11 @@
   
     
 
-  
 
 
 
     {%- if first_page != empty -%}
-      <div class="Collapsible Collapsible--large">
+      <div style = "padding: 0px;" class="Collapsible Collapsible--large">
         <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
           {{- first_page.title -}} <span class="Collapsible__Plus"></span>
         </button>
@@ -197,7 +201,7 @@
     {% endif %}
    
     {%- if section.settings.reviews_enabled -%}
-      <div class="Collapsible Collapsible--large">
+      <div style = "padding: 0px;" class="Collapsible Collapsible--large">
         {%- comment -%}We parse from metafields the number of reviews{%- endcomment -%}
         {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
 
@@ -226,9 +230,18 @@
           }
         }
         #Collapsible-reviews{
-          
           display:none;
-          
+        }
+        #review-btn{
+          padding: 13px 10px;
+          font-size: 0.65rem;
+          margin: 0px;
+          background-color: #d6b849;
+         
+        }
+        #review-btn:hover{
+          border-color: #d6b849;
+          color: white;
         }
 
 
