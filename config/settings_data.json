@@ -10,7 +10,7 @@
     "button_background": "#c15262",
     "button_text_color": "#ffffff",
     "header_background": "#ffffff",
-    "header_heading_color": "#b96d79",
+    "header_heading_color": "#bb4f5f",
     "header_light_color": "#9d9d9d",
     "footer_background": "#ffffff",
     "footer_heading_color": "#c15262",
@@ -187,15 +187,15 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-06-04_at_17.39.54_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/7394650157432454c09a984ff00640f2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-06-04_at_17.39.54_1.jpg",
               "apply_overlay": true,
               "content_position": "bottomCenter",
-              "subheading": "STYLISH PAWS™",
+              "subheading": "STYLISH PAWS",
               "title": "Especially Fur You",
               "button_1_text": "SHOP now",
               "button_1_link": "shopify:\/\/collections",
               "button_2_text": "",
-              "button_2_link": "shopify:\/\/collections\/all"
+              "button_2_link": "shopify:\/\/collections"
             }
           },
           "1536064794716": {
@@ -204,7 +204,7 @@
               "image": "shopify:\/\/shop_images\/dog-paws.jpg",
               "apply_overlay": true,
               "content_position": "bottomCenter",
-              "subheading": "STYLISH PAWS™",
+              "subheading": "No More asking ...",
               "title": "",
               "button_1_text": "SHOP NOW",
               "button_1_link": "shopify:\/\/collections",
