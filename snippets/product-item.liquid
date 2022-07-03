@@ -63,7 +63,7 @@
         
         {%- if product.available -%}
           {%- if product.compare_at_price > product.price -%}
-            <span style ="color:rgb(245, 21, 21)" class="ProductItem__Label Heading Text--subdued">Save {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%</span>
+            <span style ="background-color: #BB4F5F;color:rgb(236, 236, 236)" class="ProductItem__Label Heading Text--subdued">Save {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%</span>
           {%- endif -%}
         
         {%comment%} Solde out section  {%endcomment%}
