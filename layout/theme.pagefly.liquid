@@ -107,6 +107,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 {{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
 
 {% include 'a2reviews-head-var' %}
+
+	{{ shop.metafields.loox["global_html_head"] }}
 	{% render 'vitals-loader' %}
 
 </head>
