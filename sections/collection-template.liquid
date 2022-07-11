@@ -372,7 +372,7 @@
 
           <div class="Popover__Content">
             <div class="Popover__ValueList" data-scrollable>
-              {%- assign sort_by_list = 'manual,price-ascending,price-descending,title-ascending,title-descending,created-ascending,created-descending,best-selling' | split: ',' -%}
+              {%- assign sort_by_list = 'manual,price-ascending,price-descending,title-ascending,title-descending,created-ascending,created-descending' | split: ',' -%}
 
               {%- for sort_by in sort_by_list -%}
                 <button class="Popover__Value {% if current_sort_by == sort_by %}is-selected{% endif %} Heading Link Link--primary u-h6" data-value="{{ sort_by }}" data-action="select-value">
