@@ -444,6 +444,7 @@
           },
           "4980a681-58d9-40db-9f97-69fa9affafae": {
             "type": "look",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/Capture.png",
               "dot_style": "light",
