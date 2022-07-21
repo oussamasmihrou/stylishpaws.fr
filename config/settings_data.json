@@ -510,7 +510,7 @@
       "recently-viewed-products": {
         "type": "recently-viewed-products",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "title": "Recently viewed",
           "show_product_info": true,
           "show_color_swatch": true
@@ -550,7 +550,7 @@
       "related-products": {
         "type": "related-products",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "title": "YOU MAY ALSO LIKE",
           "show_product_info": true,
           "show_color_swatch": true
