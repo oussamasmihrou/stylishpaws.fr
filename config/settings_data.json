@@ -529,7 +529,7 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "show_share_buttons": true,
+          "show_share_buttons": false,
           "show_vendor": false,
           "description_below_add_to_cart": false,
           "show_color_swatch": false,
