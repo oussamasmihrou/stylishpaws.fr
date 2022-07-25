@@ -623,7 +623,7 @@
         ],
         "settings": {
           "autoplay": true,
-          "cycle_speed": 4,
+          "cycle_speed": 3,
           "background": "#bc818c",
           "text_color": "#f8f8f8"
         }
